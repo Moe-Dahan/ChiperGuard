@@ -1,60 +1,61 @@
-# ChiperGuard
-CipherGuard is a secure and user-friendly password manager application developed in Python using the Tkinter GUI library. It provides a convenient way to generate, store, and manage passwords securely.
-CipherGuard
-CipherGuard is a secure and user-friendly password manager application developed in Python using the Tkinter GUI library. It provides a convenient way to generate, store, and manage passwords securely.
+# THINGS TO KEEP IN MIND BEFORE USING THIS SOFTWARE
+If You Lose The Encryption/Decryption Key All Passwords will be lost for ever.
+If you want to upload your password.json file to the cloud for backup you can, DO NOT UPLOAD YOU KEY ALONG WITH IT to the cloud.
+Keep your key file backed up to a USB or External Device (External hard drive or Mobile Device etc...),
+To maximize security.
 
-Table of Contents
-Features
-Installation
-Usage
-Screenshots
-Contributing
-License
-Features
-Password Generation
-Generate strong and random passwords with customizable options:
-Length of the password
-Inclusion of special characters, numbers, uppercase, and lowercase letters
-Password Storage
-Save generated passwords along with corresponding website names for easy retrieval.
-Passwords are securely encrypted using the Fernet encryption scheme from the cryptography library.
-Password Management
-View and manage saved passwords:
-Copy passwords to clipboard for usage.
-Delete passwords when they are no longer needed.
-Backup and Restore
-Backup password data to external files for safekeeping.
-Restore password data from backup files if necessary.
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/CipherGuard.git
-Navigate to the project directory:
-bash
-Copy code
-cd CipherGuard
-Install the required dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Run the application:
-bash
-Copy code
-python main.py
-On the first run, the application will prompt you to create new settings or select backup files if the settings file is missing.
-Once settings are configured, the main window will display options to generate passwords, save passwords, and view/delete existing passwords.
-Screenshots
-(Add relevant screenshots here)
+# CipherGuard - Secure Password Manager
 
-Contributing
-Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to open an issue or create a pull request.
+**CipherGuard** is a Python-based password manager built using the Tkinter library. It allows you to generate, store, and manage encrypted passwords securely. The application supports backing up and restoring key and password files, ensuring your data is protected.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Features
+- **Password Generation**: Create strong, customizable passwords with options for:
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Special characters
+- **Encrypted Password Storage**: Passwords are stored securely using AES encryption with `Fernet` (from the `cryptography` library).
+- **Keyfile and Password Backup**: Easily back up your encryption key and password file to external storage. You can later restore your data from these backups.
+- **Password Management**: 
+  - View saved passwords
+  - Delete passwords
+  - Directly open websites associated with saved passwords
+- **User-friendly Interface**: The GUI is intuitive, built with `Tkinter` and `ttk`, making it easy for anyone to use.
 
-Acknowledgments
-Python Tkinter Documentation: https://docs.python.org/3/library/tkinter.html
-Cryptography library: https://cryptography.io/en/latest/fernet/
-Icons made by Iconfinder: (Add proper attribution if required)
+# Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Moe-Dahan/cipherguard.git
+   cd cipherguard
+   
+2. Install required dependencies: You need to install the dependencies listed in the requirements.txt file
+   ```bash
+   pip install -r requirements.txt
+
+# Run The Script
+3. To Run the script simply do
+    ```bash
+    python main.py
+  Another option is to use pyinstaller to create a bootable application, (for linux you just need to remove/comment the # iconbitmap lines
+  
+# Usage
+First-Time Setup
+When running the app for the first time, you'll be prompted to create new encryption files.
+Choose directories to store your keyfile and password file.
+Backing Up Files
+You can back up your keyfile and password file by selecting the "Backup" option in the menu.
+
+# Restoring Files
+If you have backed up your files, you can restore them using the "Restore" option in the app, allowing you to access your saved passwords again.
+
+# Password Generation
+Enter a website name.
+Customize the password by choosing the length and whether to include special characters, numbers, uppercase, or lowercase letters.
+Save the generated password securely.
+Security
+Your passwords are encrypted using AES encryption provided by the cryptography library.
+The encryption key is stored in a separate keyfile, adding an extra layer of security.
+
+# Contribution
+Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
