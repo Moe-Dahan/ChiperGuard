@@ -58,4 +58,9 @@ Your passwords are encrypted using AES encryption provided by the cryptography l
 The encryption key is stored in a separate keyfile, adding an extra layer of security.
 
 # Contribution
-Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
+Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.![Screenshot from 2024-11-18 18-39-35](https://github.com/user-attachments/assets/57b23c96-e385-4402-aa0c-9c509e0d591e)
+![Screenshot from 2024-11-18 18-39-16](https://github.com/user-attachments/assets/cef36a04-05f4-4043-b929-5e470b9fce74)
+![Screenshot from 2024-11-18 18-38-56](https://github.com/user-attachments/assets/49610da4-6204-450f-b230-c1a3373c24db)
+
+
+
